@@ -1,5 +1,6 @@
 FROM jimmycuadra/rust:latest
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
-RUN apt-get update && apt-get -y install \
+RUN apt-get update -qq && apt-get -y -qq install \
   gfortran \
+  protobuf-compiler \
   && apt-get clean
