@@ -2,6 +2,7 @@ FROM jimmycuadra/rust:1.14.0
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
 RUN apt-get update -qq && apt-get -y -qq install \
   gfortran \
+  sqlite \
   protobuf-compiler \
   && apt-get clean
 RUN cargo install protobuf
