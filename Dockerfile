@@ -6,8 +6,4 @@ RUN apt-get update -qq && apt-get -y -qq install \
   gfortran \
   sqlite3 \
   libsqlite3-dev \
-  libblas-dev \
-  liblapack-dev \
-  liblapacke-dev \
-  libopenblas-dev \
   && apt-get clean
