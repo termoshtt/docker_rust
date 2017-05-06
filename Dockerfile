@@ -5,6 +5,8 @@ RUN apt-get update -qq && apt-get -y -qq install \
   cmake \
   gfortran \
   sqlite3 \
+  python \
+  python-pip \
   python3 \
   python3-pip \
   cython \
