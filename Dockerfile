@@ -4,8 +4,10 @@ RUN apt-get update -qq && apt-get -y -qq install \
   make \
   cmake \
   gfortran \
-  python3 \
   sqlite3 \
+  python3 \
+  python3-pip \
+  cython \
   libsqlite3-dev \
   liblapack-dev \
   liblapacke-dev \
