@@ -1,4 +1,4 @@
-FROM jimmycuadra/rust:1.17.0
+FROM jimmycuadra/rust:1.18.0
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
 RUN apt-get update -qq && apt-get -y -qq install \
   make \
