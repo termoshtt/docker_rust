@@ -1,6 +1,7 @@
 FROM jimmycuadra/rust:1.19.0
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
 RUN apt-get update -qq && apt-get -y -qq install \
+  curl \
   make \
   cmake \
   gfortran \
