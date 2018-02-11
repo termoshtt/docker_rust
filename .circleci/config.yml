@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: termoshtt/rust-dev:latest
+    steps:
+      - checkout
+      - run:
+          name: Print the Current Time
+          command |
+            cd kcov-test
+            cargo test
