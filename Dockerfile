@@ -1,4 +1,4 @@
-FROM rust:1.22
+FROM rust:1.23
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
 RUN apt-get update -qq && apt-get -y -qq install \
   curl gcc gfortran make cmake binutils-dev \
@@ -11,3 +11,4 @@ RUN wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz && \
   cd kcov-master/build && \
   cmake .. && make && make install && \
   rm -rf ../../kcov-master
+RUN cargo install cargo-kcov
