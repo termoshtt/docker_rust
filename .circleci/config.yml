@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Print the Current Time
-          command |
+          name: cargo test
+          command: |
             cd kcov-test
             cargo test
