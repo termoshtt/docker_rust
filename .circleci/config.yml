@@ -10,3 +10,10 @@ jobs:
           command: |
             cd kcov-test
             cargo test
+
+      - run:
+          name: kcov
+          command: |
+            cd kcov-test
+            cargo kcov
+            bash <(curl -s https://codecov.io/bash)
