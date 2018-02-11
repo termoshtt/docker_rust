@@ -1,0 +1,17 @@
+box: termoshtt/rust-dev:latest
+
+cargo-test:
+  steps:
+    - script:
+      name: cargo test
+      code: |
+        cd kcov-test
+        cargo test
+
+kcov:
+  steps:
+    - script:
+      name: Generate code coverage
+      code: |
+        cd kcov-test
+        ./kcov.sh
