@@ -1,4 +1,4 @@
-FROM rust:1.23
+FROM rust:1.25
 MAINTAINER termoshtt <toshiki.teramura@gmail.com>
 RUN apt-get update -qq && apt-get -y -qq install \
   curl gcc gfortran make cmake binutils-dev \
